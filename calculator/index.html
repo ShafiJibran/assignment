@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-image: linear-gradient(to bottom, rgb(178, 176, 176), rgb(36, 36, 37)) ;
         }
         .calculator {
             width: 250px;
@@ -22,7 +22,7 @@
             text-align: center;
         }
         #inp {
-            width: 100%;
+            width: 90%;
             height: 50px;
             font-size: 1.5em;
             text-align: right;
@@ -62,7 +62,7 @@
             color: white;
         }
         .on-off {
-            background: blue;
+            background: grey;
             color: white;
         }
     </style>
@@ -71,10 +71,10 @@
     <div class="calculator">
         <input type="text" id="inp" disabled>
         <div class="buttons">
-            <button onclick="clrall()" class="clear">C</button>
+            <button  disabled></button>
             <button onclick="clearDisplay()">AC</button>
-            <button onclick="clrall()">.</button>
-            <button id='abay' class="on-off" onclick="toggleCalculator()">ON</button>
+            <button onclick="clrall()" class="clear">C</button>
+            <button id='abay' class="on-off" onclick="toggleCalculator()">OFF</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
